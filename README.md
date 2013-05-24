@@ -23,6 +23,11 @@ Usage
 
 These scripts will install Splunk, configure [deployment](http://docs.splunk.com/Documentation/Splunk/latest/Deploy/Aboutdeploymentserver) and [forwarding](http://docs.splunk.com/Documentation/Splunk/latest/Deploy/Introducingtheuniversalforwarder), and install a Splunk app with some default settings for forwarding Spark's logs.
 
+By default, Splunk's web interface uses port 8000; you'll may have to open this port in the master's EC2 security group in order to access Splunk from your desktop.
+
+__Quick Start__: Run `one_click_install.sh`.
+
+__Alternative Instructions__:
 Run `install_master.sh` to set up Splunk on the Spark master node, then run `install_workers.sh` to install Splunk Universal Forwarders on the Spark worker nodes.
 Make sure that the RPMs that you downloaded are in the same directory as these scripts.
 
