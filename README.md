@@ -29,6 +29,6 @@ Make sure that the RPMs that you downloaded are in the same directory as these s
 Finally, you may need to restart everything before forwarding will work:
 
 ```bash
-/opt/splunkforwarder/bin/splunk restart splunkd
+/opt/splunk/bin/splunk restart splunkd
 pssh -h /root/spark/conf/slaves "/opt/splunkforwarder/bin/splunk restart splunkd"
 ```
