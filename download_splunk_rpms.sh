@@ -5,7 +5,8 @@
 # Splunk.com and vist the downloads page.
 
 # From http://www.splunk.com/download
-wget -O splunk-5.0.2-149561-linux-2.6-x86_64.rpm 'http://www.splunk.com/page/download_track?file=5.0.2/splunk/linux/splunk-5.0.2-149561-linux-2.6-x86_64.rpm&ac=storm_splunkdownload&wget=true&name=wget&typed=releases'
+wget -O splunk-6.1.3-220630-linux-2.6-x86_64.rpm 'http://www.splunk.com/page/download_track?file=6.1.3/splunk/linux/splunk-6.1.3-220630-linux-2.6-x86_64.rpm&ac=&wget=true&name=wget&platform=Linux&architecture=x86_64&version=6.1.3&product=splunk&typed=release'
+
 
 # From http://www.splunk.com/download/universalforwarder
-wget -O splunkforwarder-5.0.2-149561-linux-2.6-x86_64.rpm 'http://www.splunk.com/page/download_track?file=5.0.2/universalforwarder/linux/splunkforwarder-5.0.2-149561-linux-2.6-x86_64.rpm&ac=storm_splunkdownload&wget=true&name=wget&typed=releases'
+wget -O splunkforwarder-6.1.3-220630-linux-2.6-x86_64.rpm 'http://www.splunk.com/page/download_track?file=6.1.3/universalforwarder/linux/splunkforwarder-6.1.3-220630-linux-2.6-x86_64.rpm&ac=&wget=true&name=wget&platform=Linux&architecture=x86_64&version=6.1.3&product=splunk&typed=release'

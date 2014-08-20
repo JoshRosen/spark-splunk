@@ -50,6 +50,10 @@ Finally, you may need to restart everything before forwarding will work:
 pssh -h /root/spark/conf/slaves "/opt/splunkforwarder/bin/splunk restart splunkd"
 ```
 
+### Non-standard `SPARK_HOME`
+
+If you're using a non-standard `SPARK_HOME`, you can edit `spark_app/default/inputs.conf` to add those log directories.
+
 ### Adding logs from the Spark driver
 
 The app's default settings will consume Spark master and worker logs from their default locations on the Spark AMI.

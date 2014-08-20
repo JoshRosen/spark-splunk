@@ -27,4 +27,4 @@ rm -f \"$WORKER_RPM_PATH\"
 yum -y install pssh
 
 # Run the install script on each worker:
-pssh -i -h /root/spark/conf/slaves "$REMOTE_SCRIPT"
+pssh -i -h /root/spark-ec2/conf/slaves "$REMOTE_SCRIPT"
