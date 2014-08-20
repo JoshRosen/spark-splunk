@@ -17,18 +17,12 @@ ln -s /opt/splunk/etc/apps/spark /opt/splunk/etc/deployment-apps/spark
 
 # Configure the deployment server:
 echo "
-# Example 1
-# Matches all clients and includes all apps in the server class
+[serverClass:AllApps:app:spark]
+restartSplunkWeb = 0
+restartSplunkd = 1
+stateOnClient = enabled
 
-[global]
-whitelist.0=*
-# whitelist matches all clients.
 [serverClass:AllApps]
-disabled = 0
-whitelist.0 = *
-[serverClass:AllApps:app:*]
-# a server class that encapsulates all apps in the repositoryLocation
-disabled = 0
 whitelist.0 = *
 " > /opt/splunk/etc/system/local/serverclass.conf
 
@@ -49,4 +43,4 @@ $SPLUNK enable listen -port 9997 -auth admin:changeme
 
 # Restart Splunk and reload the deployment server
 $SPLUNK restart
-$SPLUNK reload deploy-server -class AllApps -auth admin:changeme
+$SPLUNK reload deploy-server -auth admin:changeme
